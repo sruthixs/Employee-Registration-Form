@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="http://localhost:3000/submit" method="POST">
+        <h2>EMPLOYEE REGISTRATION FORM</h2>
+        <label for="firstname">First-name</label>
+        <input placeholder="Type here" type="text" id="firstname" name="firstname">
+    
+        <label for="secondname">Second-name</label>
+        <input placeholder="Type here" type="text" id="secondname" name="secondname">
+    
+        <label for="id">ID</label>
+        <input type="number" placeholder="ID" id="id" name="id">
+    
+        <section>
+            <label for="department">Department</label>
+            <select name="department" id="department">
+                <option value="select">select</option>
+                <option value="hr">HR</option>
+                <option value="sd">Senior Developer</option>
+                <option value="jd">Junior Developer</option>
+                <option value="test">Software Tester</option>
+                <option value="con">consultant</option>
+            </select>
+        </section>
+    
+        <label for="dob">Date Of Birth</label>
+        <input type="date" placeholder="DOB" id="dob" name="dob">
+    
+        <div class="gender">
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </div>
+    
+        <label for="designation">Enter your Designation</label>
+        <input type="text" id="designation" name="designation" placeholder="designation">
+    
+        <label for="salary">Enter your Salary</label>
+        <input type="text" id="salary" name="salary" placeholder="Your Salary">
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+
+</html>
